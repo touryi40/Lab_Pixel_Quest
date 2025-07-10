@@ -35,4 +35,8 @@ public class movement : MonoBehaviour
         //    transform.position += new Vector3(1, 0, 0);
         //}
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("Hit");
+    }
 }
