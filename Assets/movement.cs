@@ -15,7 +15,9 @@ public class movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rb.velocity = Vector2.left;
+        float xInput = Input.GetAxis("Horizontal");
+        Debug.Log(xInput);  
+        rb.velocity = new Vector2(xInput*speed,rb.velocity.y);
         //if (Input.GetKeyDown(KeyCode.W))
         //{
         //    transform.position += new Vector3(0, 1, 0);
