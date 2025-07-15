@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GeoController : MonoBehaviour
 {
+    private SpriteRenderer sprite;
     private Rigidbody2D rb;
     public int speed = 5;
     public string nextLevel = "Scene_2";
@@ -13,11 +14,24 @@ public class GeoController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        sprite = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            sprite.color= Color.white;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            sprite.color = Color.yellow;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            sprite.color = Color.magenta;
+        }
         float xInput = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(xInput * speed, rb.velocity.y);
 
