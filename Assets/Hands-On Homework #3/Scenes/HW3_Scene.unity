@@ -1382,11 +1382,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2641175210428784259, guid: 2ed84303b3c1c3b44a85ef4e464a50c5, type: 3}
       propertyPath: dialogue.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2641175210428784259, guid: 2ed84303b3c1c3b44a85ef4e464a50c5, type: 3}
       propertyPath: dialogue.Array.data[0]
-      value: Hello traveler, welcome to our village!
+      value: hjk
       objectReference: {fileID: 0}
     - target: {fileID: 2641175210428784259, guid: 2ed84303b3c1c3b44a85ef4e464a50c5, type: 3}
       propertyPath: dialogue.Array.data[1]
